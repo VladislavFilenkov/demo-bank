@@ -13,7 +13,15 @@ class UseAccount {
         yourAccount.balance = 55.63;
 
         myAccount.display();
-        System.out.println();
+        out.print(" плюс $");
+        out.print(myAccount.getInterest(5.00));
+        out.println(" дохода ");
+
         yourAccount.display();
+        double yourInterestRate = 7.00;
+        out.print(" плюс $");
+        double yourInterestAmount = yourAccount.getInterest(yourInterestRate);
+        out.print(yourInterestAmount);
+        out.println(" дохода ");
     }
 }
